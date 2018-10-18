@@ -1,0 +1,8 @@
+img {
+	opacity: 0.5;
+	margin-top: 50%;
+}
+
+.unavailable {
+	filter: grayscale(100%);
+}

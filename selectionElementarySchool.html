@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Test-o-matik</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<h1 class="text-center toBeHidden">Test-o-matik</h1>
+		<h2 class="text-center toBeHidden">Matematika pro základní školy</h2>
+		<div class="container">
+			<div class="row" id="mathSection">
+				<div class='well' id='expression'>
+				
+				</div>
+				<div class="btn-group">
+					<div class="btn-group">
+					    <button type="button" class="btn btn-primary dropdown-toggle nabidka" data-toggle="dropdown">Sčítání<span class="caret"></span></button>
+					    <ul class="dropdown-menu" role="menu">
+					      <li><a href="#" onclick="scitaniDoDeseti()">Sčítání do deseti</a></li>
+					      <li><a href="#" onclick="scitaniPresDesitku()">Sčítání do dvaceti přes desítku</a></li>
+					    </ul>
+					</div>
+					<button type="button" class="btn btn-primary" onclick="odcitaniDoDeseti()">Odčítání do deseti</button>
+					<button type="button" class="btn btn-primary" onclick="nasobeniMalaNasobilka()">Násobení - malá násobilka</button>
+					<button type="button" class="btn btn-primary" onclick="deleniMalaNasobilka()">Dělení - malá násobilka</button>
+					<button type="button" class="btn btn-primary" onclick="rovnice()">Lineární rovnice - jednoduché</button>
+				</div>
+			</div>
+			<table id="keypad">
+				<tr>
+					<td><button type="button" class="btn btn-default btn-block" onclick="buttonPressNumbers('-')">-</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="btn btn-default btn-block" onclick="buttonPressNumbers('1')">1</button></td>
+					<td><button type="button" class="btn btn-default btn-block" onclick="buttonPressNumbers('2')">2</button></td>
+					<td><button type="button" class="btn btn-default btn-block" onclick="buttonPressNumbers('3')">3</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="btn btn-default btn-block" onclick="buttonPressNumbers('4')">4</button></td>
+					<td><button type="button" class="btn btn-default btn-block" onclick="buttonPressNumbers('5')">5</button></td>
+					<td><button type="button" class="btn btn-default btn-block" onclick="buttonPressNumbers('6')">6</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="btn btn-default btn-block" onclick="buttonPressNumbers('7')">7</button></td>
+					<td><button type="button" class="btn btn-default btn-block" onclick="buttonPressNumbers('8')">8</button></td>
+					<td><button type="button" class="btn btn-default btn-block" onclick="buttonPressNumbers('9')">9</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="btn btn-default btn-block" onclick="buttonPressNumbers('0')">0</button></td>
+					<td><button type="button" class="btn btn-default btn-block" onclick="buttonPressNumbers(',')">,</button></td>
+					<td><button type="button" class="btn btn-default btn-block" onclick="isCorrect()">OK</button></td>
+				</tr>
+			</table>
+		</div>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
